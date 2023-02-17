@@ -1,0 +1,109 @@
+.cardFront {
+    background-image: url("./Assets/cardFront.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 448px;
+    height: 245px;
+    top: 350px;
+    left: 400px;
+    box-shadow: 0px 30px 100px rgba(204, 63, 150, 0.05);
+}
+
+.cardBack {
+    background-image: url("./Assets//cardBack.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 448px;
+    height: 245px;
+    top: 650px;
+    left: 500px;
+    box-shadow: 0px 30px 100px rgba(204, 63, 150, 0.05);
+}
+
+.filledCircle {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}
+
+.emptyCircle {
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 130px;
+    top: 50px;
+}
+
+.cardNumber {
+    color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+.cardName {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+
+.cardDate {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 170px;
+    left: 360px;
+}
+
+.cvvNo {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 92px;
+    left: 355px;
+}
+
+.formContainer {
+    border: 2px solid blue;
+    width: 536px;
+    height: 550px;
+    position: absolute;
+    left: 1200px;
+    top: 400px;
+}
+
+::placeholder .inputFieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+::placeholder {
+    color: hsl(279, 6%, 55%);
+}
+
+.inputFieldContainer label {
+    font-weight: 600;
+    color: hsl(278, 68%, 11%);
+    margin-bottom: 5rem;
+}
+
+.inputFieldContainer input {
+    width: 500px;
+    padding: 1rem;
+    font-size: 22px;
+    border: 2px solid hsl(270, 3%, 87%);
+    color: hsl(279, 6%, 55%);
+    border-radius: 10px;
+}
+
+.inputFieldContainer input:focus {
+    outline: none;
+    border-color: hsl(278, 94%, 30%);
+}
