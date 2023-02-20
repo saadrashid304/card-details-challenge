@@ -70,15 +70,14 @@
 }
 
 .formContainer {
-    border: 2px solid blue;
     width: 536px;
     height: 550px;
     position: absolute;
-    left: 1200px;
-    top: 400px;
+    left: 1400px;
+    top: 380px;
 }
 
-::placeholder .inputFieldContainer {
+.inputFieldContainer {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
@@ -91,7 +90,7 @@
 .inputFieldContainer label {
     font-weight: 600;
     color: hsl(278, 68%, 11%);
-    margin-bottom: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 .inputFieldContainer input {
@@ -107,3 +106,81 @@
     outline: none;
     border-color: hsl(278, 94%, 30%);
 }
+
+.dateFieldContainer {
+    display: flex;
+}
+
+.dateFieldContainer input {
+    width: 65px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+.yearFieldContainer {
+    margin-left: 0.5rem;
+}
+
+.detailsContainer {
+    display: flex;
+}
+
+.cvcFieldContainer {
+    margin-left: 2rem;
+}
+
+.cvcFieldContainer input {
+    width: 262px;
+}
+
+.btnContainer {
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.inputFieldError {
+    border: 2px solid hsl(0, 100%, 66%);
+}
+
+.input_error {
+    color: hsl(0, 100%, 66%);
+    line-height: 0;
+    font-weight: 600;
+}  
+
+.completeContainer {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.thankyou {
+    font-weight: 800;
+    /* line-height: 0; */
+    font-size: 35px;
+}
+
+.thankMessage {
+    color: hsl(279, 6%, 55%);
+    font-weight: 570;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+/* @media screen and () {
+    
+} */
