@@ -4,8 +4,8 @@
     position: absolute;
     width: 448px;
     height: 245px;
-    top: 350px;
-    left: 400px;
+    top: 220px;
+    left: 250px;
     box-shadow: 0px 30px 100px rgba(204, 63, 150, 0.05);
 }
 
@@ -15,8 +15,8 @@
     position: absolute;
     width: 448px;
     height: 245px;
-    top: 650px;
-    left: 500px;
+    top: 500px;
+    left: 350px;
     box-shadow: 0px 30px 100px rgba(204, 63, 150, 0.05);
 }
 
@@ -70,17 +70,15 @@
 }
 
 .formContainer {
-    width: 536px;
-    height: 550px;
     position: absolute;
-    left: 1400px;
-    top: 380px;
+    left: 1150px;
+    top: 320px;
 }
 
 .inputFieldContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 ::placeholder {
@@ -91,12 +89,13 @@
     font-weight: 600;
     color: hsl(278, 68%, 11%);
     margin-bottom: 0.5rem;
+    font-size: 0.8em;
 }
 
 .inputFieldContainer input {
-    width: 500px;
-    padding: 1rem;
-    font-size: 22px;
+    width: 380px;
+    padding: 0.7rem 1rem;
+    font-size: 1em;
     border: 2px solid hsl(270, 3%, 87%);
     color: hsl(279, 6%, 55%);
     border-radius: 10px;
@@ -112,7 +111,7 @@
 }
 
 .dateFieldContainer input {
-    width: 65px;
+    width: 50px;
 }
 
 input::-webkit-outer-spin-button,
@@ -135,18 +134,18 @@ input::-webkit-inner-spin-button {
 }
 
 .cvcFieldContainer {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .cvcFieldContainer input {
-    width: 262px;
+    width: 184px;
 }
 
 .btnContainer {
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     text-align: center;
-    padding: 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 7px;
     cursor: pointer;
     width: 100%;
@@ -161,7 +160,7 @@ input::-webkit-inner-spin-button {
     color: hsl(0, 100%, 66%);
     line-height: 0;
     font-weight: 600;
-}  
+}
 
 .completeContainer {
     text-align: center;
@@ -181,6 +180,277 @@ input::-webkit-inner-spin-button {
     margin-bottom: 3rem;
 }
 
-/* @media screen and () {
-    
-} */
+@media screen and (max-width: 1800px) {
+    .cardFront {
+        left: 200px;
+    }
+
+    .cardBack {
+        left: 300px;
+    }
+
+    .formContainer {
+        left: 1050px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .cardFront {
+        left: 150px;
+    }
+
+    .cardBack {
+        left: 250px;
+    }
+
+    .formContainer {
+        left: 950px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .cardFront {
+        left: 100px;
+    }
+
+    .cardBack {
+        left: 200px;
+    }
+
+    .formContainer {
+        left: 850px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .cardFront {
+        left: 50px;
+    }
+
+    .cardBack {
+        left: 150px;
+    }
+
+    .formContainer {
+        left: 750px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .cardFront {
+        left: 330px;
+        top: 180px;
+        z-index: 100;
+    }
+
+    .cardBack {
+        left: 420px;
+        top: 40px;
+    }
+
+    .formContainer {
+        left: 400px;
+        top: 500px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .cardFront {
+        left: 180px;
+    }
+
+    .cardBack {
+        left: 270px;
+    }
+
+    .formContainer {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cardFront {
+        left: 90px;
+    }
+
+    .cardBack {
+        left: 180px;
+    }
+
+    .formContainer {
+        left: 160px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cardFront {
+        left: 50px;
+    }
+
+    .cardBack {
+        left: 140px;
+    }
+
+    .formContainer {
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardFront {
+        left: 10px;
+    }
+
+    .cardBack {
+        left: 100px;
+    }
+
+    .formContainer {
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .cardFront {
+        left: 30px;
+        top: 133px;
+        width: 350px;
+        height: 200px;
+        background-size: 350px 200px;
+    }
+
+    .cardBack {
+        top: 20px;
+        left: 110px;
+        width: 350px;
+        height: 200px;
+        background-size: 350px 200px;
+    }
+
+    .filledCircle {
+        width: 50px;
+        height: 50px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .emptyCircle {
+        left: 90px;
+        top: 35px;
+    }
+
+    .cardNumber {
+        font-size: 1.5em;
+        top: 90px;
+        left: 20px;
+    }
+
+    .cardName {
+        font-size: 0.8em;
+        top: 150px;
+        left: 20px;
+    }
+
+    .cardDate {
+        font-size: 0.8em;
+        top: 150px;
+        left: 290px;
+    }
+
+    .cvvNo {
+        top: 68px;
+        left: 267px;
+    }
+
+    .formContainer {
+        left: 40px;
+        top: 450px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cardFront {
+        left: 15px;
+        top: 105px;
+        width: 270px;
+        height: 150px;
+        background-size: 270px 150px;
+    }
+
+    .cardBack {
+        top: 20px;
+        left: 75px;
+        width: 270px;
+        height: 150px;
+        background-size: 270px 150px;
+    }
+
+    .filledCircle {
+        width: 35px;
+        height: 35px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .emptyCircle {
+        width: 15px;
+        height: 15px;
+        left: 60px;
+        top: 22px;
+    }
+
+    .cardNumber {
+        font-size: 1.1em;
+        top: 70px;
+        left: 10px;
+    }
+
+    .cardName {
+        font-size: 0.8em;
+        top: 105px;
+        left: 10px;
+    }
+
+    .cardDate {
+        font-size: 0.8em;
+        top: 105px;
+        left: 210px;
+    }
+
+    .cvvNo {
+        top: 50px;
+        left: 210px;
+        font-size: 0.8em;
+    }
+
+    .formContainer {
+        left: 12px;
+        top: 268px;
+        width: 337px;
+    }
+
+    .inputFieldContainer input {
+        width: 301px;
+    }
+
+    .dateFieldContainer input {
+        width: 40px;
+    }
+
+    .cvcFieldContainer input {
+        width: 125px;
+    }
+
+    .completeContainer {
+        margin-top: 3rem;
+    }
+
+    .thankyou {
+        line-height: 0;
+        font-size: 1.5em;
+    }
+
+    .thankMessage {
+        font-size: 1em;
+    }
+}

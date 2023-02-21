@@ -7,3 +7,16 @@ body {
   background-repeat: no-repeat;
   background-size: 30vw 100vh;
 }
+
+@media screen and (max-width: 1220px) {
+  body {
+    background-image: url('./Assets/mobileback.png');
+    background-size: 100vw 37vh;
+  }
+}
+
+@media screen and (max-width: 560px) { 
+  body {
+      background-size: 100vw 30vh;
+    }
+}
