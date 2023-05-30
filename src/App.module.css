@@ -121,9 +121,9 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-/* input[type=number] {
+input[type=number] {
     -moz-appearance: textfield;
-} */
+}
 
 .yearFieldContainer {
     margin-left: 0.5rem;
